@@ -24,7 +24,6 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    padding: min(15px, 5%) 0;
 }
 
 .card {
@@ -40,7 +39,7 @@ body {
     border-radius: 0 1% 1% 0;
 }
 
-.text, .text>a {
+.text, .text>a, .credit {
     font-size: .75rem;
     font-style: normal;
     font-family: "Inter";
@@ -125,8 +124,29 @@ em {
 }
 
 .attribution {
-    margin-top: 10%;
+    position:fixed;
+    bottom: 1vh;
+    width: 100%;
+    text-align: center;
 }
+
+.credit {
+    opacity: 20%;
+    filter: blur(1px);
+    transition: opacity filter;
+    transition-duration: .2s;
+}
+
+.credit:hover {
+    opacity: 100%;
+    filter: blur(0);
+}
+
+.credit>a {
+    color: var(--accent);
+    font-size: .75rem;
+}
+
 
 /* laptop */
 @media only screen and (min-width: 1024px) {
@@ -191,12 +211,10 @@ em {
     .illustration {
         content: url('images/image-header-desktop.jpg');
     }
-    
-    .attribution {
-        width: 100%;
-        display: flex;
-        flex-flow: row;
-        justify-content: space-around;
-        align-items: center;
+
+    .credit {
+        opacity: 100%;
+        filter: blur(0);
     }
+    
 }
