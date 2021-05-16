@@ -4,8 +4,8 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 # Links
 
-- Solution URL: [Add solution URL here](https://github.com/andolalaina/stats-preview-card-component)
-- Live Site URL: [Add live site URL here](https://andolalaina.github.io/stats-preview-card-component)
+- Solution URL: [https://github.com/andolalaina/stats-preview-card-component](https://github.com/andolalaina/stats-preview-card-component)
+- Live Site URL: [https://andolalaina.github.io/stats-preview-card-component](https://andolalaina.github.io/stats-preview-card-component)
 
 # My process
 
